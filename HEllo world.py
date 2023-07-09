@@ -1,0 +1,1 @@
+log.INF("Hello world")
