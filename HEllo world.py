@@ -1,1 +1,0 @@
-log.INF("Hello world")
