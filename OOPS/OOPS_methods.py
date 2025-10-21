@@ -25,6 +25,4 @@ Mainclass.access_class_variables("IITG")
 obj1.get_name_age()
 Mainclass.static_method_example()
 obj1.static_method_example()
-
-        
-    
+print('abc')

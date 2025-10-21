@@ -1,0 +1,57 @@
+General recommendations:
+1. do not use global variables
+2. try to use standard names for functions and variables
+3. dir(data type) gives list of dunder methods and object methods
+4. help(function) gives help about the function
+5. memorize std. functions and methods of built in data structure(list, dictionary etc.)
+6. need to get source code or requirements of is_equal function?
+
+Set lookup is faster because sets use hash tables for constant-time membership tests.
+    String lookup is slower because it checks each character sequentially.
+
+    for text = "hello world " * 100000  # large string
+    String check time: 0.04687380790710449
+    Set check time: 0.03576374053955078
+
+    Converting to lower case also helps make this memory effecient
+
+    List comprehension builds a full list in memory:
+    Generator expression yields items one at a time, on demand:
+    This version skips creating the list and feeds values directly into sum(), which is more memory-efficient — especially for large strings.
+
+    "".join generates a clean string instead of a generator object
+
+    Summary of conepts used:
+    1. Sets -> Sets in Python are a built-in data type used to store unordered collections of unique elements.
+    They're great for fast membership testing, removing duplicates, and performing mathematical set operations.
+
+    2. sum() -> The sum() function in Python is a built-in tool used to add up all the elements in an iterable,
+    like a list, tuple, or generator.
+
+    3. A generator expression in Python is a compact way to create a generator — an object that produces items one at a time, only as needed.
+    It looks similar to a list comprehension but uses parentheses () instead of square brackets [].
+
+    Key Benefits:
+    Memory-efficient: Doesn’t store all items in memory.
+    Lazy evaluation: Generates values on-the-fly.
+    Faster for large data: Ideal for streaming or large-scale processing.
+
+    4. "".replace() -> The method in Python is used with strings to return a new string where all occurrences of a
+    specified substring are replaced with another substring.
+
+    5. "".isalnum() -> The method in Python checks whether a string consists only of alphanumeric characters
+     — that is, letters (A–Z, a–z) and digits (0–9).
+
+    6. "".lower() -> The method in Python returns a copy of the string with all uppercase letters converted to lowercase.
+
+    7. The method "".join() in Python is used to combine elements of an iterable into a single string, using the string before .join() as the separator.
+
+    8. cleaned[start:stop:step] is the general slice syntax.
+
+    [::-1] means: start: omitted → start from the end,
+    stop: omitted → go until the beginning
+    step: -1 → move backwards
+    
+    Use iterative for practical, performance-sensitive code.
+
+    Use recursive for clarity, elegance, or when recursion is required by design.
