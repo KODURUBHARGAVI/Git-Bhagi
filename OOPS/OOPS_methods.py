@@ -11,7 +11,7 @@ class Mainclass:
     @classmethod
     def access_class_variables(cls, change_company):
         #Class method--> takes class(cls) as the first parameter-->used to access/modify class variables 
-        cls.Institute=change_company
+        #cls.Institute=change_company
         print(f"Accessing common details:: {cls.Institute}")
 
     @staticmethod
